@@ -43,6 +43,15 @@ CREATE TABLE `answers` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `answers`
+--
+
+LOCK TABLES `answers` WRITE;
+/*!40000 ALTER TABLE `answers` DISABLE KEYS */;
+/*!40000 ALTER TABLE `answers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `exams`
 --
 
@@ -63,6 +72,15 @@ CREATE TABLE `exams` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `exams`
+--
+
+LOCK TABLES `exams` WRITE;
+/*!40000 ALTER TABLE `exams` DISABLE KEYS */;
+/*!40000 ALTER TABLE `exams` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `grades`
 --
 
@@ -79,6 +97,15 @@ CREATE TABLE `grades` (
   KEY `index_grades_grade_id` (`grade_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `grades`
+--
+
+LOCK TABLES `grades` WRITE;
+/*!40000 ALTER TABLE `grades` DISABLE KEYS */;
+/*!40000 ALTER TABLE `grades` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `multiple_choices`
@@ -101,6 +128,15 @@ CREATE TABLE `multiple_choices` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `multiple_choices`
+--
+
+LOCK TABLES `multiple_choices` WRITE;
+/*!40000 ALTER TABLE `multiple_choices` DISABLE KEYS */;
+/*!40000 ALTER TABLE `multiple_choices` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `questions`
 --
 
@@ -118,6 +154,15 @@ CREATE TABLE `questions` (
   CONSTRAINT `fk_questions_exams_id` FOREIGN KEY (`exams_id`) REFERENCES `exams` (`exams_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `questions`
+--
+
+LOCK TABLES `questions` WRITE;
+/*!40000 ALTER TABLE `questions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `questions` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `score_card`
@@ -145,6 +190,15 @@ CREATE TABLE `score_card` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `score_card`
+--
+
+LOCK TABLES `score_card` WRITE;
+/*!40000 ALTER TABLE `score_card` DISABLE KEYS */;
+/*!40000 ALTER TABLE `score_card` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `students`
 --
 
@@ -161,6 +215,15 @@ CREATE TABLE `students` (
   KEY `index_students_students_id` (`students_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `students`
+--
+
+LOCK TABLES `students` WRITE;
+/*!40000 ALTER TABLE `students` DISABLE KEYS */;
+/*!40000 ALTER TABLE `students` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `teachers`
@@ -182,6 +245,15 @@ CREATE TABLE `teachers` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `teachers`
+--
+
+LOCK TABLES `teachers` WRITE;
+/*!40000 ALTER TABLE `teachers` DISABLE KEYS */;
+/*!40000 ALTER TABLE `teachers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `users_dashboard`
 --
 
@@ -199,6 +271,15 @@ CREATE TABLE `users_dashboard` (
   KEY `index_users_dashboard_login_as` (`login_as`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users_dashboard`
+--
+
+LOCK TABLES `users_dashboard` WRITE;
+/*!40000 ALTER TABLE `users_dashboard` DISABLE KEYS */;
+/*!40000 ALTER TABLE `users_dashboard` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -209,4 +290,4 @@ CREATE TABLE `users_dashboard` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-08-06 14:41:14
+-- Dump completed on 2023-08-06 23:51:25
